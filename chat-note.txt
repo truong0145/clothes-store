@@ -1,2 +1,0 @@
-[TRUONG]: hellu
-[MASTER]: hi truong
