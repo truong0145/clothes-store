@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/mycss.css">    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+
+<body class="bg-light">
+
+    <!-- NAVIGATION-BAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand fa-150" href="#"><i class="fas fa-crop-alt"></i> Truong's clothes</a>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Brands
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Clownz</a></li>
+                            <li><a class="dropdown-item" href="#">Degrey</a></li>
+                            <li><a class="dropdown-item" href="#">DirtyCoins</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <div class="flex-d">
+                    <div class="btn-group">
+                        <a class="text-white h5" href=""><i class="fas fa-shopping-cart"></i></a>
+                        <span class="text-dark me-3">
+                            <b><sup id="cartCount" class="rounded-pill bg-warning px-1 ms-1">0</sup></b>
+                        </span>
+                        <a href="#" class="h5 text-decoration-none text-white" data-bs-toggle="dropdown">
+                            Huy Truong
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li><button class="dropdown-item" type="button">Account</button></li>
+                            <li><button class="dropdown-item" type="button">Bills</button></li>
+                            <li><button class="dropdown-item" type="button">Logout</button></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </nav>
+
+    <!-- CLOTHES -->
+    <div>
+        <div class="card shadow-sm m-3 " style="width: 18rem;">
+            <img src="image/5.jpg" class="card-img-top" alt="none">
+            <div class="card-body">
+                <h5 id="card-title" clothesName class="card-title">CLOWNZ RACING FLAMES T-SHIRT</h5>
+                <p class="card-text">1.999.000 <span>vnd</span></p>
+            </div>
+            <div class="card-body">
+                <a href="#" class="btn btn-outline-dark">Details</a>
+                <a href="#" class="btn btn-success float-end" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                    onclick="increase()">Add to cart</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- PAGINATION -->
+    <nav class="m-3">
+        <ul class="pagination">
+            <li class="page-item">
+                <a class="page-link" href="index.html">Previous</a>
+            </li>
+            <li class="page-item"><a class="page-link" href="index.html">1</a></li>
+            <li class="page-item active">
+                <a class="page-link" href="index-page-02.html">2</a>
+            </li>
+            <li class="page-item disabled">
+                <a class="page-link" href="#">Next</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- MODAL -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <h5>Added</h5>
+                </div>
+                <div class="modal-footer border-0">
+                    <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CUSTOM-SCRIPT -->
+    <script src="js/myjs.js"></script>
+
+</body>
+
+</html>

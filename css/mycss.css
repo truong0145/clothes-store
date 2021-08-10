@@ -1,0 +1,13 @@
+.card {
+    display: inline-block;
+}
+
+.card-body h5 {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.fa-150 {
+    font-size: 150%;
+}
