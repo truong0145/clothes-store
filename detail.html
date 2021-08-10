@@ -64,23 +64,33 @@
     </nav>
 
     <!-- CLOTHES -->
-    <div>
-        <div class="card shadow-sm m-3 " style="width: 18rem;">
-            <img src="image/tsun-1.jpg" class="card-img-top" alt="none">
+    <div class="card col-10 m-3 rounded shadow">
+        <div class="row g-0">
+          <div class="col-md-6">
+            <img id="clothesLink" src="" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-6">
             <div class="card-body">
-                <h5 id="card-title" clothesName class="card-title">TSUN OUT DOOR JACKET - B/R</h5>
-                <p class="card-text">520.000 <span>vnd</span></p>
+              <h5 id="clothesName" class="card-title h1 mb-3"></h5>
+              <strong>
+                  <a id="clothesBrand" href="" class="bg-warning text-dark text-decoration-none rounded col-2 p-2">Clownz</a>
+                </strong>
+              <p id="clothesPrice" class="h4 mt-3 mb-3">10000000</p>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
             </div>
-            <div class="card-body">
-                <a  id="detailTSUN1" href="#" class="btn btn-outline-dark">Details</a>
-                <a href="#" class="btn btn-success float-end" data-bs-toggle="modal" data-bs-target="#exampleModal"
-                    onclick="increase()">Add to cart</a>
-            </div>
+          </div>
         </div>
-
-    </div>
+      </div>
 
     <!-- PAGINATION -->
+
+    <div class="m-3">
+        <div class="display-inline-block">
+            <img src="" style="width: 35rem;" alt="">
+        </div>
+    </div>
+
 
     <!-- MODAL -->
     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
@@ -98,7 +108,7 @@
     </div>
 
     <!-- CUSTOM-SCRIPT -->
-    <script src="js/myjs.js"></script>
+    <script src="js/detail.js"></script>
 
 </body>
 
