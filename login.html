@@ -22,41 +22,32 @@
 
     <div>
         <div class="bg-white rounded shadow col-5 mt-5 mx-auto">
-            <form class="p-3">
-                <strong>
-                    <label>UserName</label>
-                </strong>
-                <input id="userName" type="text" class="form-control bg-light my-3">   
-                <strong>
-                    <label>Password</label>
-                </strong>
-                <input id="password" type="password" class="form-control my-3">
-                <a href="index-clownz.html" class="btn btn-primary" onclick="return login()">Login</a>
-            </form>
-        </div>
-    </div>
-
-    <!-- MODAL -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-body">
-                    <h5>Added</h5>
-                </div>
-                <div class="modal-footer border-0">
-                    <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
-                </div>
+            <div class="bg-dark rounded-top p-5">
+                <h2 class="text-white">Login</h2>
+            </div>
+            <div class="p-3">
+                <form>
+                    <strong>
+                        <label>UserName</label>
+                    </strong>
+                    <input id="userName" type="text" class="form-control bg-light my-3">
+                    <strong>
+                        <label>Password</label>
+                    </strong>
+                    <input id="password" type="password" class="form-control bg-light my-3">
+                    <div id="errorMessage" class="text-danger"></div>
+                    <a href="index-clownz.html" class="btn btn-dark col-5 my-3" onclick="return login()">Login</a>
+                </form>
+            </div>
+            <div class="pt-3 pb-5 ps-3">
+                <span>Don't have account</span>
+                <a class="text-decoration-none" href="">Sign up here</a>
             </div>
         </div>
     </div>
 
     <!-- CUSTOM-SCRIPT -->
-    <script>
-        function login(){
-            return true;
-        }
-    </script>
+    <script src="js/login.js"></script>
 
 </body>
 
